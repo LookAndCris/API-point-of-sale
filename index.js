@@ -21,8 +21,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan("dev"));
 
-//ROUTES
+//ROUTES - ENDPOINTS
 app.use("/api/v1/items", require("./src/v1/routes/itemRoutes"));
+app.use("/api/v1/users", require("./src/v1/routes/userRoutes"));
 
 //PORT
 const PORT = process.env.PORT || 8080;

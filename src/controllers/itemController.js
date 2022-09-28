@@ -31,6 +31,7 @@ const editItemController = async (req, res) => {
     await itemModel.findOneAndUpdate({ _id: itemId }, req.body, {
       new: true,
     });
+
     res.status(201).json("item Updated");
   } catch (error) {
     res.status(400).send(error);

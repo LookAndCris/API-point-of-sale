@@ -19,6 +19,6 @@ router.post("/add-item", addItemController);
 router.put("/edit-item", editItemController);
 
 //Method - DELETE
-router.delete("/delete-item", deleteItemController);
+router.post("/delete-item", deleteItemController);
 
 module.exports = router;
