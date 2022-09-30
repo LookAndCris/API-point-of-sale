@@ -24,6 +24,7 @@ app.use(morgan("dev"));
 //ROUTES - ENDPOINTS
 app.use("/api/v1/items", require("./src/v1/routes/itemRoutes"));
 app.use("/api/v1/users", require("./src/v1/routes/userRoutes"));
+app.use("/api/v1/bills", require("./src/v1/routes/billRoutes"));
 
 //PORT
 const PORT = process.env.PORT || 8080;
